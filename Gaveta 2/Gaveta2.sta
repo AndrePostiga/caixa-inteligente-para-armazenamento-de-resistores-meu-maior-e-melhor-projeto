@@ -1,0 +1,49 @@
+
+ROM used: 365 (4%)
+          365 (4%) including unused fragments
+
+          1 Average locations per line
+          5 Average locations per statement
+
+RAM used: 8 (2%) at main() level
+          9 (2%) worst case
+
+Stack used: 1 worst case (out of 8 total available)
+
+Lines Stmts  %   Files
+----- ----- ---  -----
+   63    74 100  Gaveta2.c
+   17     0   0  Gaveta2.h
+  327     0   0  ..\..\..\..\..\Program Files (x86)\PICC\devices\16F877A.h
+----- -----
+  407    74 Total
+
+Page ROM  %  RAM   Vol Diff  Functions:
+---- --- --- ---   --- ----  ----------
+0     22   6   1             @delay_ms1
+0     41  11   1             @GETCH_1_
+0    269  74   1  2261  6.9  main
+0     29   8   0             @goto10137
+
+Program metrics:
+    Functions               1
+    Statements              74
+    Comments                76
+    Volume (V)              2272
+    Difficilty (D)          6.7
+    Effort to implement (E) 15245
+    Time to implement (T)   14 minutes
+    Est Delivered Bugs (B)  0
+    Cyclomatic Complexity   28
+    Maintainability (MI)    95
+
+ Segment     Used  Free
+-----------  ----  ----
+00000-00003     4  0  
+00004-007FF   361  1683  
+00800-00FFF     0  2048  
+01000-017FF     0  2048  
+01800-01FFF     0  2048  
+
+
+

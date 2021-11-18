@@ -1,0 +1,29 @@
+[PROJECT]
+Target=C:\Users\Andre\Desktop\Projeto terminado\Gaveta 3\Gaveta3].hex
+Development_Mode=
+Processor_Text=PIC16F877A
+ToolSuite=CCS
+Processor=0x877A
+[C:\Users\Andre\Desktop\Projeto terminado\Gaveta 3\Gaveta3]]
+Type=4
+[C:\Users\Andre\Desktop\Projeto terminado\Gaveta 3\Gaveta3]]
+Path=
+[C:\Users\Andre\Desktop\Projeto terminado\Gaveta 3\Gaveta3]]
+FileList=
+[C:\Users\Andre\Desktop\Projeto terminado\Gaveta 3\Gaveta3]]
+BuildTool=
+[C:\Users\Andre\Desktop\Projeto terminado\Gaveta 3\Gaveta3]]
+OptionString=
+[C:\Users\Andre\Desktop\Projeto terminado\Gaveta 3\Gaveta3]]
+AdditionalOptionString=
+[mru-list]
+1=C:\Users\Andre\Desktop\Projeto terminado\Gaveta 3\Gaveta3].c
+[Windows]
+0=0000 %S 0 0 796 451 3 0
+[Units]
+Link=0
+Count=1
+1=C:\Users\Andre\Desktop\Projeto terminado\Gaveta 3\Gaveta3]
+[Opened Files]
+1=Gaveta3].c
+2=

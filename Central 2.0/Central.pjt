@@ -1,0 +1,24 @@
+[PROJECT]
+Target=F:\Projeto terminado\Central 2.0\Central.hex
+Development_Mode=
+Processor_Text=PIC18F452
+ToolSuite=CCS
+Processor=0x452F
+[F:\Projeto terminado\Central 2.0\Central]
+Type=4
+Path=
+FileList=
+BuildTool=
+OptionString=
+AdditionalOptionString=
+[mru-list]
+1=F:\Projeto terminado\Central 2.0\Central.c
+[Windows]
+0=0000 %S 0 0 796 451 3 0
+[Units]
+Link=0
+Count=1
+1=F:\Projeto terminado\Central 2.0\Central
+[Opened Files]
+1=Central.c
+2=

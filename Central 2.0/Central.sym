@@ -1,0 +1,266 @@
+000     @SCRATCH
+001     @SCRATCH
+001     _RETURN_
+002     @SCRATCH
+003     @SCRATCH
+004     @SCRATCH
+005     x
+006     j
+007-008 teclado
+009-00A digito
+00B     w
+00C-00D unidade
+00E-00F dezena
+010-013 dezena1
+014-015 centena
+016-017 resultado
+018-01B resultado1
+01C     virgula
+01D     kohm
+01E     mohm
+01F-022 y
+023-026 valor
+027-02A valor1
+02B-02C leitura
+02D-030 k
+031     i
+032     d
+033     caixa
+034     c
+035-038 v
+039     a
+03A-03B subrotina.leitura
+03A-03B @MUL1616.P1
+03A-03D eepromLER.v
+03A-03D @DIVFF.P1
+03A     lcd_init.i
+03A-03D @ADDFF.P1
+03A-03D @SFTOI.P2
+03A     achaoled.@SCRATCH1
+03A     MAIN.@SCRATCH1
+03B-03E @PRINTF_L32U_83.P1
+03B     @PRINTF_U_83.P2
+03B-03E @PRINTF_L32D_83FPFPF.P3
+03B     lcd_init.@SCRATCH1
+03B     MAIN.@SCRATCH2
+03C-03D @MUL1616.P1
+03C     @PRINTF_U_83.P2
+03C     subrotina.mohm
+03C     lcd_init.@SCRATCH2
+03D     subrotina.kohm
+03D     @DIV88.P1
+03E-041 @DIVFF.P1
+03E-041 @ADDFF.P2
+03E     eepromLER.kohm
+03E     @DIV88.P1
+03E     @MUL1616.@SCRATCH1
+03F     @PRINTF_L32D_83FPFPF.P1
+03F     eepromLER.mohm
+03F     @DIV88.@SCRATCH1
+03F     @PRINTF_L32U_83.@SCRATCH1
+040     eepromLER.d
+040     @PRINTF_L32U_83.@SCRATCH2
+040     @PRINTF_L32D_83FPFPF.@SCRATCH1
+041-042 @ITOF.P1
+041-044 @FLT.P2
+041     @PRINTF_L32U_83.@SCRATCH3
+041     @PRINTF_L32D_83FPFPF.@SCRATCH2
+042     @ADDFF.@SCRATCH1
+042     @PRINTF_L32U_83.@SCRATCH4
+042     @PRINTF_L32D_83FPFPF.@SCRATCH3
+042     @DIVFF.@SCRATCH1
+043     @ADDFF.@SCRATCH2
+043     @PRINTF_L32U_83.@SCRATCH5
+043     @PRINTF_L32D_83FPFPF.@SCRATCH4
+043     @DIVFF.@SCRATCH2
+044     @ADDFF.@SCRATCH3
+044     @PRINTF_L32U_83.@SCRATCH6
+044     @PRINTF_L32D_83FPFPF.@SCRATCH5
+044     @DIVFF.@SCRATCH3
+045-048 @FLT.P1
+045     @ADDFF.@SCRATCH4
+045     @PRINTF_L32U_83.@SCRATCH7
+045     @PRINTF_L32D_83FPFPF.@SCRATCH6
+045     @DIVFF.@SCRATCH4
+046     @ADDFF.@SCRATCH5
+046     @PRINTF_L32U_83.@SCRATCH8
+046     @PRINTF_L32D_83FPFPF.@SCRATCH7
+046     @DIVFF.@SCRATCH5
+047     @ADDFF.@SCRATCH6
+047     @PRINTF_L32D_83FPFPF.@SCRATCH8
+047     @DIVFF.@SCRATCH6
+048-04B @DIV3232.P1
+048-04B @FTOSD.P2
+048-04B @MULFF.P3
+048     lcd_putc.c
+048     @ADDFF.@SCRATCH7
+049     @delay_ms1.P1
+049     lcd_gotoxy.x
+049     @FLT.@SCRATCH1
+049     @ADDFF.@SCRATCH8
+04A     lcd_gotoxy.y
+04A     @FLT.@SCRATCH2
+04B     lcd_gotoxy.address
+04C-04F @MULFF.P1
+04C-04F @DIV3232.P2
+04C     lcd_gotoxy.@SCRATCH1
+04C     @FTOSD.@SCRATCH1
+04D     lcd_send_byte.address
+04E     lcd_send_byte.n
+04F     lcd_read_byte.low
+04F     lcd_send_byte.@SCRATCH1
+050     lcd_read_byte.high
+050     lcd_send_nibble.n
+050     @DIV3232.@SCRATCH1
+050     @MULFF.@SCRATCH1
+051     lcd_read_nibble.n
+051     lcd_read_byte.@SCRATCH1
+051     @DIV3232.@SCRATCH2
+051     @MULFF.@SCRATCH2
+052     lcd_read_nibble.@SCRATCH1
+052     @DIV3232.@SCRATCH3
+052     @MULFF.@SCRATCH3
+053     @DIV3232.@SCRATCH4
+054     @DIV3232.@SCRATCH5
+F83     PSP_DATA
+FBB     CCP_2_LOW
+FBB-FBC CCP_2
+FBC     CCP_2_HIGH
+FBE-FBF CCP_1
+FBE     CCP_1_LOW
+FBF     CCP_1_HIGH
+FE9-FEA @WRITE_PROGRAM_MEMORY.P1
+FE9-FEA @READ_PROGRAM_MEMORY.P2
+FF6-FF8 @READ_PROGRAM_MEMORY.P1
+FF6-FF8 @WRITE_PROGRAM_MEMORY.P2
+
+ROM Allocation:
+0A08  @delay_ms1
+0004  LCD_INIT_STRING
+0AC4  lcd_read_byte
+0A72  lcd_read_nibble
+0A2E  lcd_send_nibble
+0B12  lcd_send_byte
+0B58  lcd_init
+0BC2  lcd_gotoxy
+0BE6  lcd_putc
+0D6A  subrotina
+313C  eepromLER
+3090  @FLT
+3106  @ITOF
+4EB6  achaoled
+2E26  @ADDFF
+4DEA  @SFTOI
+0018  @const134
+4E22  @DIV88
+4E4A  @PRINTF_U_83
+0034  @const141
+005C  @const142
+5192  MAIN
+0082  @const145
+00AA  @const146
+00D2  @const147
+00FA  @const148
+0122  @const149
+014A  @const150
+0172  @const151
+019A  @const152
+01C2  @const153
+01EA  @const154
+0212  @const155
+023A  @const156
+0262  @const157
+028A  @const158
+02B2  @const159
+02DA  @const160
+0302  @const161
+032A  @const162
+0352  @const163
+037A  @const164
+03A2  @const165
+03B4  @const166
+03DA  @const167
+0400  @const168
+0426  @const169
+044C  @const170
+0C28  @DIV3232
+0CA2  @PRINTF_L32U_83
+0D4C  @MUL1616
+0468  @const183
+048E  @const184
+04B4  @const185
+04D6  @const186
+04FA  @const187
+0520  @const188
+0544  @const189
+0564  @const190
+058A  @const191
+05B0  @const192
+2B68  @MULFF
+2C5C  @FTOSD
+2C9C  @PRINTF_L32D_83FPFPF
+05D0  @const201
+05F0  @const202
+0610  @const204
+0638  @const205
+0660  @const206
+5038  @DIVFF
+067E  @const211
+069C  @const217
+06BC  @const219
+06DC  @const221
+06FC  @const223
+071C  @const225
+073C  @const227
+0758  @const230
+077E  @const232
+07A4  @const235
+07CA  @const237
+07F0  @const238
+0816  @const239
+0834  @const241
+0852  @const247
+0872  @const249
+0892  @const251
+08B2  @const253
+08D2  @const255
+08F2  @const260
+0914  @const262
+0938  @const264
+095C  @const266
+0978  @const275
+099E  @const276
+09C4  @const277
+09EA  @const278
+5192  @cinit
+
+Project Directory:
+    F:\Projeto terminado\Central 2.0\
+
+Project Files:
+    Central.c
+    Central.h
+    C:\Program Files (x86)\PICC\devices\18F452.h
+    C:\Program Files (x86)\PICC\drivers\lcd.c
+
+Units:
+    Central.c (main)
+
+Compiler Settings:
+    Processor:      PIC18F452
+    Pointer Size:   16
+    ADC Range:      0-65535
+    Opt Level:      9
+    Short,Int,Long: UNSIGNED: 1,8,16
+    Float,Double:   32,32
+
+Output Files:
+    Errors:      Central.err
+    Ext Symbols: Central.esym
+    INHX32:      Central.hex
+    Symbols:     Central.sym
+    List:        Central.lst
+    Debug/COFF:  Central.cof
+    Project:     Central.PJT
+    Call Tree:   Central.tre
+    Statistics:  Central.sta
